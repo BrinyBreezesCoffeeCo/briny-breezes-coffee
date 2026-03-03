@@ -6,14 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Briny Breezes Coffee Co.</title>
   <style>
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #f8f6f1;
+      background: #f8f6f1;
       color: #1f2f46;
       line-height: 1.6;
     }
@@ -22,27 +20,42 @@
       background: linear-gradient(to bottom, #0f3b78, #1a5aa6);
       color: white;
       text-align: center;
-      padding: 30px 20px 50px;
+      padding: 28px 20px 24px;
+    }
+
+    .logo-wrap {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 18px;
     }
 
     .logo {
-      max-width: 420px;
-      width: 90%;
+      width: 100%;
+      max-width: 220px;
       height: auto;
-      margin-bottom: 20px;
       background: white;
       border-radius: 18px;
-      padding: 14px;
+      padding: 10px;
+      display: block;
+    }
+
+    header h1 {
+      margin: 0 0 10px;
+      font-size: 2.3rem;
+    }
+
+    header p {
+      margin: 0;
+      font-size: 1.05rem;
     }
 
     .hero {
-      text-align: center;
-      padding: 0;
+      margin: 0;
     }
 
     .hero img {
       width: 100%;
-      max-height: 520px;
+      height: 340px;
       object-fit: cover;
       display: block;
     }
@@ -50,25 +63,26 @@
     .section {
       max-width: 1000px;
       margin: auto;
-      padding: 50px 20px;
-    }
-
-    h1, h2 {
-      margin-top: 0;
+      padding: 48px 20px;
     }
 
     .intro {
       text-align: center;
-      font-size: 1.2rem;
-      max-width: 750px;
-      margin: 0 auto;
+      max-width: 760px;
+      margin: 0 auto 30px;
+    }
+
+    .intro h2,
+    .card-content h2,
+    .info-box h2 {
+      margin-top: 0;
     }
 
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 24px;
-      margin-top: 30px;
+      margin-top: 28px;
     }
 
     .card {
@@ -80,7 +94,7 @@
 
     .card img {
       width: 100%;
-      height: 240px;
+      height: 230px;
       object-fit: cover;
       display: block;
     }
@@ -90,7 +104,7 @@
     }
 
     .info-box {
-      background: #ffffff;
+      background: white;
       border-radius: 16px;
       padding: 24px;
       box-shadow: 0 8px 24px rgba(0,0,0,0.08);
@@ -99,7 +113,7 @@
 
     .button {
       display: inline-block;
-      margin-top: 18px;
+      margin-top: 16px;
       background: #f0b93a;
       color: #1f2f46;
       text-decoration: none;
@@ -112,14 +126,16 @@
       text-align: center;
       background: #0f3b78;
       color: white;
-      padding: 24px 20px;
+      padding: 22px 20px;
       margin-top: 40px;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="logo.png.PNG" alt="Briny Breezes Coffee Co. logo" class="logo">
+    <div class="logo-wrap">
+      <img src="logo.png.PNG" alt="Briny Breezes Coffee Co. logo" class="logo">
+    </div>
     <h1>Briny Breezes Coffee Co.</h1>
     <p>Coastal coffee, sunny vibes, and a welcoming place to gather.</p>
   </header>
