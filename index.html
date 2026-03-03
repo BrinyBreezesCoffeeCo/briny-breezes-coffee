@@ -61,13 +61,15 @@
 
     .hero {
       width: 100%;
-      background: #ffffff;
-      padding: 0;
+      height: 520px;
+      overflow: hidden;
     }
 
     .hero img {
       width: 100%;
-      height: auto;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 78%;
       display: block;
     }
 
@@ -152,6 +154,10 @@
     }
 
     @media (max-width: 700px) {
+      .hero {
+        height: 360px;
+      }
+
       header h1 {
         font-size: 1.9rem;
       }
